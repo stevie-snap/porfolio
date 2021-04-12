@@ -1,0 +1,335 @@
+ ::before,::after {
+   margin: 0;
+   padding:0;
+   box-sizing: border-box;
+ }
+body{
+    font-family: "Poppins", sans-serif;
+    background-color:beige ;
+    cursor: none;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    width: 90%;
+    min-height: 10vh;
+    align-items: center;
+    margin: auto;
+}
+
+.nav-links{
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-links, h1{
+    flex: 1;
+}
+
+.cursor{
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    z-index: -1;
+}
+
+.link-grow{
+    transform: scale(2);
+    background: black;
+}
+
+.hover-over-link{
+    color: white;
+}
+
+li a{
+    text-decoration: none;
+}
+
+a:link{
+    color:black;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    color:white;
+
+}
+
+a:active{
+    color:white;
+}
+
+.post-it{
+    margin-top: 4%;
+    margin-left: 5%;
+    width: 400px;
+    height: 400px;
+    background-color: lightgreen;
+    position: relative;
+    z-index: -3;
+}
+
+.post-it1{
+    width: 420px;
+    height: 420px;
+    margin-top: 2.2%;
+    margin-left: 5%;
+    position: absolute;
+  
+}  
+  
+
+.top-left{
+    position: absolute;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid beige;
+}
+
+#pin{
+    width: 20%;
+    position: relative;
+    margin-left: 40%;
+    top:-400px;
+    z-index: -3;
+}
+
+.fold {
+    position: relative;
+    box-shadow: 0 5px 10px black;
+    border-radius:1em;
+    overflow: hidden;
+    
+  }
+  .fold:after {
+    content:'';
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left: 0;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.30015756302521013) 19%, rgba(255,255,255,0.5354516806722689) 20%, rgba(255,255,255,0) 21%, rgba(0,0,0,0.17130602240896353) 49%, rgba(0,0,0,0) 50%, rgba(255,255,255,0.5186449579831933) 50%, rgba(255,255,255,0) 51%, rgba(0,0,0,0.2329306722689075) 75%, rgba(0,0,0,0) 75%, rgba(255,255,255,0.5354516806722689) 75%, rgba(255,255,255,0) 76%, rgba(0,0,0,0.14889705882352944) 100%);
+    pointer-events: none;
+  }
+
+  .personalité{
+      display: flex;
+      width: 50%;
+      margin-left: 50%;
+      margin-top: -21%;
+  }
+
+
+  #notif{
+      margin-top: 8px;
+  }
+
+  #id{
+     width: 30%;
+     margin-left: 13%;
+     margin-top: 3%;
+     z-index: -3;
+     position: relative; 
+  }
+
+#insta{
+     width: 5%;
+     top: 70px;
+     z-index: -3;
+     position: relative;
+  }
+
+#indication{
+    margin-top: 8%;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    background-color: cadetblue;
+}
+
+.light{
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    background: radial-gradient(rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 60%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+#document1{
+    width: 600px;
+    height: 480px;
+    margin-top: 4%;
+    margin-left: 50%;
+    position: relative;
+
+}
+
+#img{
+    width: 100%;
+}
+
+#document2{
+    width: 500px;
+    height: 625px;
+    margin-top: 12%;
+    margin-left: 5%;
+    position: relative;
+}
+
+#img2{
+    width: 100%;
+}
+
+#document3{
+    width: 490px;
+    height: 672px;
+    margin-top: -48%;
+    margin-left: 56.5%;
+    position: relative;
+}
+
+#img3{
+    width: 90%;
+}
+
+#ligne-image{
+    display: inline;
+}
+
+H3{
+    font-family:'Rubik Mono One', sans-serif;
+    margin-top: -95%;
+    margin-left: 10%;
+    font-size: 30px;
+}
+
+H1{
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 60px;
+}
+
+.message{
+    height: 1200px;
+}
+
+#sad{
+    margin-top: 250px;
+    width: 20%;
+}
+
+#logo{
+    width: 35%;
+    margin-left: 450px;
+    position: relative;
+    z-index: -3;
+}
+
+#tag{
+    width: 35%;
+    position: relative;
+    z-index: -3;
+    margin-top: 340px;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    filter: blur(25px);
+}
+
+.text{
+    font-family:'Rubik Mono One', sans-serif;
+    color: beige;
+    position: absolute;
+    top: 50%;
+    left: 50%
+    transform translate(-50%, -50%);
+    text-shadow: 0 0 15px black;
+}
+
+.btn{
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    background-color: rgba(0,0,0,0.3);
+    color: beige;
+    padding: 10px;
+    border: 1px solid beige;
+    border-radius: 10%;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 11px;
+
+}
+.image1 img{
+    width: 100%;
+    height: 100%;
+    filter: blur(25px);
+}
+
+.tex{
+    font-family:'Rubik Mono One', sans-serif;
+    color: beige;
+    position: absolute;
+    top: 50%;
+    left: 50%
+    transform translate(-50%, -50%);
+    text-shadow: 0 0 15px black;
+}
+
+.btn1{
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    background-color: rgba(0,0,0,0.3);
+    color: beige;
+    padding: 10px;
+    border: 1px solid beige;
+    border-radius: 10%;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 11px;
+
+}
+.image2 img{
+    width: 100%;
+    height: 100%;
+    filter: blur(25px);
+}
+
+.txt{
+    font-family:'Rubik Mono One', sans-serif;
+    color: beige;
+    position: absolute;
+    top: 50%;
+    left: 50%
+    transform translate(-50%, -50%);
+    text-shadow: 0 0 15px black;
+}
+
+.btn2{
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    background-color: rgba(0,0,0,0.3);
+    color: beige;
+    padding: 10px;
+    border: 1px solid beige;
+    border-radius: 10%;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 11px;
+
+}
